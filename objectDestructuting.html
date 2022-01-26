@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Destructing</title>
+</head>
+<body>
+<h2>Object Destructing</h2>
+<script>
+const info={
+    name:"sanjay",
+    age:24,
+    profession:"Engineer"
+}
+console.log("Without object Destructing:");
+console.log(info.name,info.age,info.profession);
+console.log("With object Destructuring");
+let {name,age,profession}=info;
+console.log(name);
+console.log(age);
+console.log(profession);
+console.log("Another way of object Destructing:");
+let{name:n,age:g,profession:f}=info;
+console.log(n);
+console.log(g);
+console.log(f);
+</script>
+
+</body>
+</html>

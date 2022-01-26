@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <h4>Classes in ECMA6</h4>
+    <script>
+        class Fruits{
+            name="mangoes"
+            address="agar-malwa"
+          constructor()
+       {
+            console.log("constructor",this.name,this.address)
+       }  
+        
+        testFruits=(a,b)=>{return a*b;}
+    }
+        let f1=new Fruits;
+        console.warn(f1.address)
+        console.log(f1.testFruits(50,30));
+
+// hire order function in javascript
+
+      const companies=[
+          { name:"Google", category:"product based", start:1981 ,end:2004 },
+          { name:"Amazon", category:"product based", start:1990 ,end:2009},
+          { name:"Microsoft", category:"product based", start:1998 ,end:2022},
+          { name:"Tcs", category:"service based", start:1961 ,end:2043},
+          { name:"Wipro", category:"service based", start:1976 ,end:2000},
+          { name:"Infosys", category:"service based", start:1934 ,end:2005} 
+      ]
+  
+      const ages=[12,32,52,98,15,32,67,2,5,23,45,42];
+
+     // ****for && forEach loop 
+    //   for(let i=0; i<companies.length; i++)
+    //   {
+    //       console.log(companies[i]);
+    //   }  
+    companies.forEach((item,index)=>console.log(item))
+    // let count=0;
+    // for(let i=0; i<ages.length; i++)
+    //   {    
+    //       if(ages[i]<30){
+    //           console.log(ages[i]);
+    //           count++;
+    //       }
+    //   }  
+    //   console.log(4533,count);
+        // const age=ages.filter((item)=>{
+        //    return item<30
+        // })
+        // console.log(age);
+
+        // const service=companies.filter((com)=> com.category == "service based");
+        // console.log(service)
+
+
+        // %%%%%%%%  sort() function in javascript  %%%%%%%%%
+
+         const sorted=companies.sort((c1,c2)=>c1.start > c2.start ? 1 : -1);   //for accending order only
+         console.log(341445,sorted)
+
+        //  const sorter=companies.sort((c1,c2)=>c1.start < c2.start ? 1 : -1);   //for deccending order only
+        //  console.log(2342342,sorter)
+        
+        //^^^^^^^^^^^^^ sort() arrray by name ^^^^^^^^^//
+        const byName=companies.sort((a,b)=>a.name.localeCompare(b.name))
+        console.log("sorted array by companies names",byName);
+    
+      //++++++++++++++ reduce() function in some +++++++++ 
+      const sum=ages.reduce((total,age)=>total+age,0)
+      console.log(43545,sum)
+
+
+
+
+    </script>
+</body>
+</html>

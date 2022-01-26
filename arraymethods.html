@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h2> Hello world! </h2>
+    <script>
+     const store=[
+    {id:1,name:"sanjay"},
+    {id:2,name:"vijay"},
+    {id:3,name:"Rahul"}
+]
+const f=store.find(el=>el.id==2);
+console.log(f);
+console.log("this is sanjay singh khangora");
+const b=[1,2,3,4,5,6,7,8];
+console.log("position of variable");
+const posi=b.indexOf(7,4);
+console.log(posi);
+
+ b.pop();
+ console.log(b);
+ b.push('e','t',34,52);
+ console.log(b);
+ let [x,y,z]=[1,2,3];
+ console.log(x,y,z);
+
+ const p=[1,2,3,4,5];
+ const q=[...p,6,7,8,9];
+ console.log(q);
+ 
+ const mob=p.unshift(23,53,33);
+ console.log(mob);
+
+ let [u, , w]=[43,53,90];
+ console.log(u,w);
+ 
+//array destructing in javascript
+const  name=["Ajay","Sanjay","Vijay","Raj","kapoor","Sunil","Mohan"];
+const xm=name.join(" & ");
+console.log(xm);
+console.log("perticular index of variable:");
+const  position=name.indexOf("Mohan",1);
+ console.log(position);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const a=fruits.join(" and ");
+console.log(a);
+
+/*let first=1;
+let second=2;
+[first,second]=[second,first];
+console.log(first);
+console.log(second);*/
+
+//call apply and bind method example
+let name1={
+      firstName:"Raju",
+      lastName:"Rashtogi",
+      printFulName:function()
+      {
+          console.log(`${this.firstName} ${this.lastName}`);
+      }
+}
+name1.printFulName();
+
+//closure in javaScript
+function x1(){
+    var a=7;
+    function y1(){
+        console.log(a);
+    }
+    y1();
+}
+x1();
+
+
+    </script>
+</body>
+</html>

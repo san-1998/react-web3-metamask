@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>hello India  </h4>
+    <script>
+        console.warn("Template Literals:");
+        x=10;
+        y=20;
+        let quote="either you run the code or code runs you";
+        let by="deepak sir";
+        function name()
+        {
+            return "sanjay singh khangora";
+        }
+        console.log(`either you run the code or code runs you
+        vijay sardhana
+        ${by} gyo rai ${name()} addition ${x+y}`);
+    
+       let data=[10,20,30,40,7,8,3,5,90,100,67];
+         console.log(data.length)
+           function custom(item)
+           {
+               return item>50;
+           }
+
+         let output=data.find(custom)
+         console.log(output)
+
+         let detail=[
+               {id:10,name:'sanjay'},
+               {id:20,name:'kajol'},
+               {id:30,name:'Rohit'},
+               {id:40,name:'Vijay'}
+         ]
+         console.log(detail) 
+         let output1=detail.find((item)=>item.id>30)
+         console.log(output1) 
+
+         function test()
+         {
+             return 1;
+         }
+         let test1=function()
+         {
+             return 1;
+         }
+         let test4=()=>{ return 13;}
+         
+         console.log(test());
+         console.log(test1());
+         console.log(test4 ());
+         //double the array element
+         let newData=data.map((item)=>item*2)
+         console.log(newData); 
+    
+          let item={
+               name:"Manju",
+               address:function(){console.log("normal",this)},  
+               getName:()=>{
+                   console.log("arrow",this)
+                }            
+          }
+          item.getName();
+          item.address();
+        
+
+
+
+    
+       /*function main(a,b=main())
+       {
+           return a+b;
+       }
+       main();*/
+    
+</script>
+</body>
+</html>
